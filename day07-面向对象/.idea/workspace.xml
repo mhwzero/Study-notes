@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf9dc113-b226-4879-a65a-6c6b7fa37717" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/day07-oop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/constructor/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/constructor/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/constructor/Demo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/createobject/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/createobject/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/createobject/Demo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/createobject/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/createobject/People.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/createobject/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/demo/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/demo/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/encapsulation/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/encapsulation/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/javabean/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/javabean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/memory/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/memory/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/thisdemo/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day07-oop/src/com/itheima/thisdemo/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/资料/07、面向对象基础.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/资料/电影.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/资料/面向对象编程基础.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/day08-api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/arraylist/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/arraylist/Demo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/arraylist/Demo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/arraylist/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/arraylist/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/arraylist/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/arraylist/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/arraylist/Test6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Demo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Demo10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Demo3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Demo7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Demo8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Demo9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/EqualsDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Test4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Test5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Test6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/day08-api/src/com/itheima/string/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/资料/08、String、集合.pptx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/资料/常用API(String、ArrayList).xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../day08-String ArrrayList集合/资料/第7天面向对象知识复习.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day01/01、Java基础入门.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day01/Studyday01.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day01/第一天总结.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day02/02、类型转换、常用运算符.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day02/Java基础语法.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day02/Studyday02.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03/03、流程控制.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03/Studyday03.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day03/程序流程控制.xmind" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day04/04、数组.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day04/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day04/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day04/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day04/studyday04.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day04/数组.xmind" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2DiCAQgKD7hdO2YkkdAsnMo8YbR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day08-String ArrrayList集合" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="bf9dc113-b226-4879-a65a-6c6b7fa37717" name="默认变更列表" comment="" />
+      <created>1661172373282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1661172373282</updated>
+      <workItem from="1661172374573" duration="201000" />
+      <workItem from="1661172600632" duration="689000" />
+      <workItem from="1661179813480" duration="2486000" />
+      <workItem from="1661220321966" duration="326000" />
+      <workItem from="1661315013584" duration="149000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
