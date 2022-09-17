@@ -1,0 +1,10 @@
+能够说出Object类的特点
+能够重写Object类的toString方法
+能够重写Object类的equals方法
+能够使用日期类输出当前日期
+能够使用将日期格式化为字符串的方法
+能够使用将字符串转换成日期的方法
+能够使用Calendar类的get、set、add方法计算日期
+能够使用System类获取当前系统毫秒值
+能够使用Arrays类的sort方法
+能够使用Arrays类的toString方法

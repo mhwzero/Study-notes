@@ -1,0 +1,78 @@
+
+应同学们反馈的要求,出了三道题目:
+
+=================================大家务必将课堂代码写完后再练习以下题目,部分题目难度较大==========================
+
+练习一:
+	ArrayList<Integer> list 里面存放的是学生成绩{80，90，100，60，50，30，55，98，36}，
+	对ArrayList集合中的成绩进行统计，将统计后的结果放入
+	map中，"及格的学员数量" = 5   "不及格的学员数量"=4
+	最后打印map集合
+
+练习二: 分拣的思想
+	1.要求:定义一个Student类
+		属性:
+			String name  姓名
+			String no 	 班号
+			double score 成绩
+	2.现在将若干Student对象放入List中,请统计出每个班级的总分和平均分
+	
+	3.功能实现要求
+		(1)随便自己想怎么写,就怎么写(只要实现功能就可以)
+		(2)按照以下指定思路实现:
+			--不推荐使用 Map<String,List<Student>> 操作不方便(按照这种思路如何实现)
+				String : 班号
+				List<Student> : 该班级中的学生
+				
+				
+			--推荐使用 Map<String,ClassRoom> 
+				ClassRoom类参照以下代码:
+					public class ClassRoom {
+						private String no;//班号
+						private List<Student> stus;//班级有多个学生
+						private double total;//班级总分
+						//...
+					}
+练习三:(主要练习集合的遍历)
+
+	题目说明:
+		第一个String代表的是学科名称比如"java学科",第二个String代表:开班的班级名称"JavaEE0320" ,
+		ArrayList代表该班级里的学生
+		HashMap<String,ArrayList<HashMap<String,ArrayList<Student>>>> hs =
+					new HashMap<String,ArrayList<HashMap<String,ArrayList<Student>>>>();
+					
+	部分代码已经给出:
+public class TestComplexMap {
+	public static void main(String[] args) {
+		HashMap<String,ArrayList<HashMap<String,ArrayList<Student>>>> hs =
+				new HashMap<String,ArrayList<HashMap<String,ArrayList<Student>>>>();
+		
+		ArrayList<Student> ls1 = new ArrayList<Student>();
+		ls1.add(new Student("张三",30));
+		ls1.add(new Student("张三2",29));
+		ls1.add(new Student("张三3",33));
+		ArrayList<Student> ls2 = new ArrayList<Student>();
+		ls2.add(new Student("张四",31));
+		ls2.add(new Student("张四2",22));
+		ls2.add(new Student("张四3",35));
+		ArrayList<Student> ls3 = new ArrayList<Student>();
+		ls3.add(new Student("张五",40));
+		ls3.add(new Student("张五2",49));
+		ls3.add(new Student("张五3",43));
+		HashMap<String,ArrayList<Student>> java0320 = new HashMap<>();
+		java0320.put("javaEE0320", ls1);
+		HashMap<String,ArrayList<Student>> java0410 = new HashMap<>();
+		java0410.put("javaEE0410", ls2);
+		HashMap<String,ArrayList<Student>> java0318 = new HashMap<>();
+		java0318.put("Android0318", ls3);
+		ArrayList<HashMap<String,ArrayList<Student>>> javaList = new ArrayList<HashMap<String,ArrayList<Student>>>();
+		javaList.add(java0320);
+		javaList.add(java0410);
+		javaList.add(java0318);
+		hs.put("java学科", javaList);
+		
+		//遍历HashMap
+		
+		
+	}
+}

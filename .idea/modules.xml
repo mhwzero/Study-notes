@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/day07-面向对象/day07-面向对象.iml" filepath="$PROJECT_DIR$/day07-面向对象/day07-面向对象.iml" />
       <module fileurl="file://$PROJECT_DIR$/day08-String ArrrayList集合/day08-String ArrrayList集合.iml" filepath="$PROJECT_DIR$/day08-String ArrrayList集合/day08-String ArrrayList集合.iml" />
       <module fileurl="file://$PROJECT_DIR$/day09-模拟ATM案例/day09-模拟ATM案例.iml" filepath="$PROJECT_DIR$/day09-模拟ATM案例/day09-模拟ATM案例.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day18-多线程/day18-多线程.iml" filepath="$PROJECT_DIR$/day18-多线程/day18-多线程.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/git.iml" filepath="$PROJECT_DIR$/.idea/git.iml" />
     </modules>
   </component>
