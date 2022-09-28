@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.mapper.UserMapper">
+
+
+    <!--
+        if标签用于单分支条件判断, 相当于java中的if关键字
+        where代码块
+            1. 如果where代码块中所有条件均不成立, 整个代码块无效
+            2. 如果where代码块中条件至少有一个成立
+                先删除where代码块中第一个and | or
+                还会再where代码块之前加入一个人where关键字
+    -->
+    <select id="findByUser1" resultType="com.itheima.domain.User">
+        select * from user
+        <where>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="email != null and email != ''">
+                and email = #{email}
+            </if>
+        </where>
+    </select>
+
+    <!--
+    * choose 用于包含多个条件
+        * when 用于编写某个条件
+        * otherwise所有的when都判断失败时，进入此分支
+    -->
+    <select id="findByUser2" resultType="com.itheima.domain.User">
+        select * from user
+        <where>
+            <choose>
+                <when test="name != null and name != ''">
+                    name = #{name}
+                </when>
+                <when test="email != null and email != ''">
+                    email = #{email}
+                </when>
+                <otherwise>
+                    1=2
+                </otherwise>
+            </choose>
+        </where>
+
+    </select>
+
+
+    <!--
+        只有字符串需要跟''比较
+        set作用:
+            1. 删除set代码块中得最后一个,
+            2. 在代码块前面加入一个set关键字
+            3. set代码块中间的条件至少要有一个是成立的
+    -->
+    <update id="update" parameterType="com.itheima.domain.User">
+        update user
+        <set>
+            <if test="name != null and name != ''">
+                name = #{name},
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password},
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email},
+            </if>
+            <if test="birthday != null">
+                birthday = #{birthday},
+            </if>
+        </set>
+        where
+            uid = #{uid}
+    </update>
+
+    <!--
+        select * from user where uid in (3,5,7)
+        List======> (3,5,7,9)
+        collection="遍历数据"
+            collection: 方法传入的参数为集合类型
+            array : 方法传入的参数为数组类型
+            属性   : 方法传入的参数为一个对象
+        item="临时变量"
+        separator="分隔符"
+        open="开始"
+        close="结束"
+    -->
+    <select id="findByUids1" resultType="com.itheima.domain.User">
+        <include refid="myid"></include>
+        <foreach collection="collection" item="it" separator="," open="(" close=")">
+            #{it}
+        </foreach>
+    </select>
+
+    <select id="findByUids2" resultType="com.itheima.domain.User">
+        <include refid="myid"></include>
+        <foreach collection="array" item="it" separator="," open="(" close=")">
+            #{it}
+        </foreach>
+    </select>
+
+    <select id="findByUids3" resultType="com.itheima.domain.User">
+        <include refid="myid"></include>
+        <foreach collection="uids" item="it" separator="," open="(" close=")">
+            #{it}
+        </foreach>
+    </select>
+
+    <!--
+       sql片段,
+       id : 标识
+       include: 引入片段
+    -->
+    <sql id="myid">
+        select * from user where uid in
+    </sql>
+
+</mapper>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--读取一个外部的properties文件-->
+    <properties resource="db.properties"></properties>
+
+    <typeAliases>
+        <!--方式1: type: 原类型  alias 别名-->
+        <!--<typeAlias type="com.itheima.domain.User" alias="user"/>-->
+        <!--方式2: 指定一个包名, 默认情况下包中所有类都会自动产生一个别名,规则就是类名首字母小写-->
+        <!--<package name="com.itheima.domain"/>-->
+    </typeAliases>
+
+    <!--数据库连接信息  default: 默认哪个库生效-->
+    <environments default="development">
+        <!--一个数据库连接 -->
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+
+        <environment id="test">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--导入sql所在的文件-->
+    <mappers>
+        <!--方式1: 直接指定sql文件的位置-->
+        <!--<mapper resource="UserMapper.xml"/>-->
+        <!--方式2: 指定接口文件全路径(映射文件和接口文件编译之后必须位于同一个目录下,并且名字一样)-->
+        <!--<mapper class="com.itheima.mapper.UserMapper"/>-->
+        <!--方式3: 最终方案(映射文件和接口文件编译之后必须位于同一个目录下,并且名字一样)-->
+        <package name="com.itheima.mapper"/>
+    </mappers>
+</configuration>

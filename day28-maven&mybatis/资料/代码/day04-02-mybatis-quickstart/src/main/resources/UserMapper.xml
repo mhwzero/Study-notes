@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace: 代表了当前文件的唯一标识
+    namespace.id : 唯一的定位一条sql
+-->
+<mapper namespace="UserMapper">
+
+    <!--
+        这段标签本质上是编写了一段带有占位符的sql语句
+        id: 这段标签的唯一标识
+        User user
+    -->
+    <insert id="save" parameterType="com.itheima.domain.User">
+        insert into user(uid,name,password,email,birthday)
+        values(null,#{name},#{password},#{email},#{birthday})
+    </insert>
+
+
+
+</mapper>

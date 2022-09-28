@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    namespace: 代表了当前文件的唯一标识
+    namespace.id : 唯一的定位一条sql
+-->
+<mapper namespace="com.itheima.mapper.UserMapper">
+
+    <!--
+        这段标签本质上是编写了一段带有占位符的sql语句
+        id: 这段标签的唯一标识
+        parameterType: 当前标签对应接口方法的参数类型,可以省略
+        #{}: 占位符,相当于JDBC中的?,里面的值
+            1) 如果传入的参数是一个对象类型,#{}中里面写的就是对象中得属性名
+    -->
+    <!--
+        useGeneratedKeys="true": 告诉mybatis在保存完成之后,需要立即将主键返回来
+         keyProperty="uid" : 返回的主键的值会赋值到传入参数的哪个属性上
+    -->
+    <insert id="save" parameterType="com.itheima.domain.User"
+        useGeneratedKeys="true" keyProperty="uid">
+        insert into user(uid,name,password,email,birthday)
+        values(null,#{name},#{password},#{email},#{birthday})
+    </insert>
+
+
+    <update id="update" parameterType="com.itheima.domain.User">
+        update user set
+            name = #{name},
+            password = #{password},
+            email = #{email},
+            birthday = #{birthday}
+        where
+            uid = #{uid}
+    </update>
+
+    <!--
+       #{}: 占位符,相当于JDBC中的?,里面的值
+            1) 如果传入的参数是一个对象类型,#{}中里面写的就是对象中得属性名
+            2) 如果传入的参数是一个简单类型(8种基本+8种包装+String),#{}可以随便写,推荐写方法形参
+    -->
+    <delete id="delete" parameterType="java.lang.Integer">
+        delete from user where uid = #{uid}
+    </delete>
+
+    <!--
+        对于查询来讲,一定要声明resultType,
+        无论返回的是一个List<User>, 还是User, resultType="实体类类型"
+    -->
+    <select id="findAll" resultType="com.itheima.domain.User">
+        select * from user
+    </select>
+
+
+    <!--
+        resultMap 自定义一套映射关系
+            id: 标识
+            type: 结果集要映射到哪个实体类
+        result 表示一条映射规则(对于主键列,一般是用id替代)
+            column : 代表数据库返回结果中列
+            property: 代表的是实体类中属性
+    -->
+    <resultMap id="userMap" type="com.itheima.domain.User">
+        <id column="uid" property="uid"></id>
+        <result column="username" property="name"></result>
+        <result column="password" property="password"></result>
+        <result column="email" property="email"></result>
+        <result column="birthday" property="birthday"></result>
+    </resultMap>
+    <select id="findAll2" resultMap="userMap">
+        select uid,name as username,password,email,birthday from user
+    </select>
+
+    <select id="findByUid" parameterType="java.lang.Integer"
+            resultType="com.itheima.domain.User">
+        select * from user where uid = #{uid}
+    </select>
+
+    <!--
+        parameterType 是可以省略的
+            select * from user where name = #{arg0} and password = #{arg1}
+            select * from user where name = #{param1} and password = #{param2}
+        #{}: 占位符,相当于JDBC中的?,里面的值
+            1) 如果传入的参数是一个对象类型,#{}中里面写的就是对象中得属性名
+            2) 如果传入的参数是一个简单类型(8种基本+8种包装+String),#{}可以随便写,推荐写方法形参
+            3) 如果传入的参数是多个,我们要使用@Param("")注解在参数之前声明#{}里的内容
+    -->
+    <select id="findByNameAndPassword1" resultType="com.itheima.domain.User">
+        select * from user where name = #{username} and password = #{password}
+    </select>
+
+    <select id="findByNameAndPassword2" resultType="com.itheima.domain.User">
+        select * from user where name = #{name} and password = #{password}
+    </select>
+
+    <!--
+        select concat('黑','马') 拼接
+    -->
+    <select id="findByNameLike" resultType="com.itheima.domain.User">
+        select * from user where name like concat('%',#{name},'%')
+    </select>
+
+    <!--尽量使用#{}-->
+<!--    <select id="findByNameLike" resultType="com.itheima.domain.User">
+        select * from user where name like "%${name}%"
+    </select>-->
+
+</mapper>
