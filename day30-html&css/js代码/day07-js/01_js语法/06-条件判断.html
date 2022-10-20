@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>条件判断</title>
+</head>
+<body>
+<script>
+    //在js中, 表示真假的表达式有很多种
+    //布尔类型: true 真     false 假
+    //字符串类型: 空串为假    非空串为真
+    //数值类型: 0是假    非0是真
+    //对象类型: null是假  其它对象为真
+ 	//undefined: 假
+    let flag;
+    if (flag) {
+        console.log("这是真的");
+    } else {
+        console.log("这是假的");
+    }
+
+    //switch
+    let num = 2;
+    switch (num) {
+        case 1:
+            console.log("num=1");
+            break;
+        case 2:
+            console.log("num=2");
+            break;
+        case 3:
+            console.log("num=3");
+            break;
+        default:
+            console.log("num=未知");
+    }
+
+</script>
+
+
+</body>
+</html>

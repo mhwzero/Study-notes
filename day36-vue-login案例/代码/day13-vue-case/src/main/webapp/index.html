@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!-- 指定字符集 -->
+    <meta charset="utf-8">
+    <title>学生列表</title>
+    <style type="text/css">
+        td, th {
+            text-align: center;
+        }
+    </style>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/vue-2.6.12.js"></script>
+    <script src="./js/axios-0.20.0.js"></script>
+</head>
+<body>
+<div class="container" id="app">
+    <!--列表-->
+    <div class="row">
+        <h3 style="text-align: center">学生列表</h3>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-6">
+            <table border="1" class="table table-bordered table-hover">
+                <tr class="success" style="text-align: center">
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>生日</th>
+                    <th>地址</th>
+                    <th>操作</th>
+                </tr>
+                <tr v-for="(student,index) in studentList">
+                    <td>{{student.id}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.birthday}}</td>
+                    <td>{{student.address}}</td>
+                    <td>
+                        <a class="btn btn-default btn-sm" data-toggle="modal" data-target="#updateModal"
+                           @click="findById(student.id)">修改</a>
+
+                        <!--
+                            href="javascript:void(0)" 阻止超练级的跳转
+                            delete 不能作为自定义的方法名称
+                        -->
+                        <a class="btn btn-default btn-sm" href="javascript:void(0)" @click="deleteStudent(student.id)">删除</a>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="9" align="center">
+                        <a class="btn btn-primary" data-toggle="modal" data-target="#addModal">添加学生</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-3"></div>
+    </div>
+
+    <!-- 新增 -->
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="addModalLabel">新增</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>学号：</label>
+                        <input type="text" class="form-control" name="id" placeholder="请输入学号" v-model="studentAdd.id">
+                    </div>
+                    <div class="form-group">
+                        <label>姓名：</label>
+                        <input type="text" class="form-control" name="name" placeholder="请输入姓名"
+                               v-model="studentAdd.name">
+                    </div>
+                    <div class="form-group">
+                        <label>生日：</label>
+                        <input type="text" class="form-control" name="birthday" placeholder="请输入生日"
+                               v-model="studentAdd.birthday">
+                    </div>
+                    <div class="form-group">
+                        <label>地址：</label>
+                        <input type="text" class="form-control" name="address" placeholder="请输入地址"
+                               v-model="studentAdd.address">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" @click="addStudent()">新增</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 修改 -->
+    <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="updateModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="updateModalLabel">修改</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>学号：</label>
+                        <input type="text" class="form-control" name="id" disabled v-model="studentUpdate.id">
+                    </div>
+                    <div class="form-group">
+                        <label>姓名：</label>
+                        <input type="text" class="form-control" name="name" placeholder="请输入学号"
+                               v-model="studentUpdate.name">
+                    </div>
+                    <div class="form-group">
+                        <label>生日：</label>
+                        <input type="text" class="form-control" name="birthday" placeholder="请输入姓名"
+                               v-model="studentUpdate.birthday">
+                    </div>
+                    <div class="form-group">
+                        <label>地址：</label>
+                        <input type="text" class="form-control" name="address" placeholder="请输入地址"
+                               v-model="studentUpdate.address">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" @click="updateStudent()">修改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    let app = new Vue({
+        el: "#app",
+        data: {
+            studentList: [],//接收学生列表
+            studentAdd: {},//声明一个对象用于接收添加的表单数据
+            studentUpdate: {},//声明一个对象用于接收修改的表单数据
+        },
+        //查询 删除使用get请求 ;  添加 修改 post请求
+        methods: {
+            //查询学生列表
+            findList() {
+                axios.get("/studentServlet?action=findList").then(resp => {
+                    this.studentList = resp.data;//不要写成date或者data()
+                    //console.log(this.studentList);
+                })
+            },
+            //添加学生
+            addStudent() {
+                axios.post("/studentServlet?action=add", this.studentAdd).then(resp => {
+                    if (resp.data == "OK") {
+                        //1. 清空添加表单
+                        this.studentAdd = {};
+
+                        //2. 关闭添加框
+                        $("#addModal").modal('hide');
+
+                        //3. 重新查询列表
+                        this.findList();
+                    }
+                })
+            },
+            //根据id查询学生信息
+            findById(studentId) {
+                axios.get("/studentServlet?action=findById&id=" + studentId).then(resp => {
+                    this.studentUpdate = resp.data;
+                })
+            },
+            //更新学生
+            updateStudent() {
+                axios.post("/studentServlet?action=update", this.studentUpdate).then(resp => {
+                    //1. 清空修改表单
+                    this.studentUpdate = {};
+
+                    //2. 关闭修改框
+                    $("#updateModal").modal('hide');
+
+                    //3. 重新查询列表
+                    this.findList();
+                })
+            },
+            //删除学生
+            deleteStudent(studentId) {
+                axios.get("/studentServlet?action=deleteById&id=" + studentId).then(resp => {
+                    if (resp.data == 'OK') {
+                        this.findList();
+                    }
+                })
+            }
+        },
+        created() {
+            //页面加载完成之后,立即发送查询学生列表请求
+            this.findList();
+        }
+    })
+</script>
+
+</body>
+</html>

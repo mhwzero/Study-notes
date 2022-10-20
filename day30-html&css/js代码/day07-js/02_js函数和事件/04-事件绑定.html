@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+
+</head>
+<body>
+<input type="button" value="普通函数" onclick="a1()"> <br>
+<input type="button" value="匿名函数" id="nm"> <br>
+
+
+<script>
+    //普通函数绑定: 直接在HTML标签上添加事件的属性,指定调用的方法
+    function a1() {
+        alert("普通函数按钮被点击了")
+    }
+
+    //匿名函数绑定: 通过js代码找到html的标签,给它添加事件属性,然后绑定方法
+    document.getElementById("nm").onclick = function () {
+        alert("匿名函数按钮被点击了")
+    };
+
+
+    //写法: 注意的是方法不能加()
+    // document.getElementById("nm").onclick = a2;
+    //
+    // function a2() {
+    //     alert("匿名函数按钮被点击了")
+    // }
+
+
+</script>
+</body>
+</html>

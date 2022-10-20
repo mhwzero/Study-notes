@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>案例：页面交互</title>
+    <script>
+        //5. onload 页面加载完成
+        window.onload = function () {
+            //1. onfocus 获取焦点
+            document.getElementById("username").onfocus = function () {
+                document.getElementById("username").value = "一点就有";
+            };
+
+            //2. onblur  失去焦点
+            document.getElementById("username").onblur = function () {
+                this.value = "";
+                //document.getElementById("username").value = "";
+            };
+
+            //3. onchange 表单控件的值改变时
+            document.getElementById("edu").onchange = function () {
+                alert(this.value);
+            };
+
+            //4. onclick 鼠标单击  (点击按钮的时候  学历改成本科)
+            document.getElementById("btn").onclick = function () {
+                document.getElementById("edu").value = "1";
+            }
+        };
+    </script>
+</head>
+<body>
+<!--
+常用事件:
+    1. onfocus 获取焦点
+    2. onblur 失去焦点
+    3. onchange 表单控件的值改变时
+    4. onclick 鼠标单击
+    5. onload 页面加载完成
+-->
+姓名 <input type="text" id="username"><br/>
+学历
+<select name="edu" id="edu">
+    <option value="0">请选择</option>
+    <option value="1">本科</option>
+    <option value="2">大专</option>
+</select>
+<br/>
+<button id="btn">按钮</button>
+
+</body>
+</html>

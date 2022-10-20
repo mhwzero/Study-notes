@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML引入CSS</title>
+
+    <!--定义样式-->
+    <style>
+       h1{
+           color: green;
+       }
+    </style>
+
+    <!--引入外部的css文件-->
+    <link rel="stylesheet" href="../css/my.css">
+</head>
+<body>
+<!--
+    行内样式: 直接在HTML标签上, 通过一个style的属性来设置css样式, 作用域为当前标签
+    内部样式: 现在html的head部分通过style标签设置css样式, 作用域为当前文件
+    外部样式: 需要提前一个单独的css文件, 然后在里面定义样式, 最后在html中引入文件
+
+    优先级: 行内样式 > (内部样式 外部样式  后面覆盖前面)
+-->
+<h1 style="color: red">行内样式</h1>
+<h1>内部样式</h1>
+<h1>外部样式</h1>
+</body>
+</html>

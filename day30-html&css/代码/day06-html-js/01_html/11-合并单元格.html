@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>表格合并</title>
+</head>
+<body>
+<!--
+    合并需求:
+        1. 合并1-2和1-3为一个
+        2. 合并2-1和3-1为一个
+-->
+
+<table width="300px" height="200px" align="center" border="1" cellpadding="0" cellspacing="0" >
+    <tr>
+        <td>1-1</td>
+        <td colspan="2" align="center">1-2</td>
+
+    </tr>
+    <tr>
+        <td rowspan="2">2-1</td>
+        <td>2-2</td>
+        <td>2-3</td>
+    </tr>
+    <tr>
+
+        <td>3-2</td>
+        <td>3-3</td>
+    </tr>
+</table>
+</body>
+</html>

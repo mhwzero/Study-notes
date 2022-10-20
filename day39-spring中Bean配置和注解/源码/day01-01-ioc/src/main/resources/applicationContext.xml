@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        scope="singleton"  单例对象
+        scope="prototype"  多例对象
+        init-method="对象创建之后执行的方法"
+        destroy-method="对象销毁之前要执行的方法"
+        <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"
+              scope="prototype"
+              init-method="m1" destroy-method="m2">
+        </bean>
+    -->
+
+    <!--
+        constructor-arg: 构造函数赋值
+        name: 构造函数中形参名称
+        index="0": 构造函数中形参索引,一般省略
+        type="java.lang.String" : 构造函数中形参类型,一般省略
+        value="" 给参数赋的值(只能给简单[基本 + 包装 + 字符串]类型的参数赋值)
+        ref=""   给参数赋的值(给参数对象赋值) 他的值是配置文件中某个bean标签的id属性
+        <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl">
+            <constructor-arg name="name" value="大壮"></constructor-arg>
+            <constructor-arg name="age" value="18"></constructor-arg>
+            <constructor-arg name="birthday" ref="birthday"></constructor-arg>
+        </bean>
+    -->
+
+    <!--Date birthday = newDate()-->
+    <bean id="birthday" class="java.util.Date"></bean>
+
+    <!--
+        property: set方法对属性赋值
+        name: 属性名称
+        value="" 给属性赋的值(只能给简单[基本 + 包装 + 字符串]类型的参数赋值)
+        ref=""   给属性赋的值(给参数对象赋值) 他的值是配置文件中某个bean标签的id属性
+    -->
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl">
+        <property name="name" value="小壮"></property>
+        <property name="age" value="17"></property>
+        <property name="birthday" ref="birthday"></property>
+
+        <property name="myList">
+            <list>
+                <value>AA</value>
+                <value>BB</value>
+            </list>
+        </property>
+        <property name="mySet">
+            <set>
+                <value>CC</value>
+                <value>DD</value>
+            </set>
+        </property>
+        <property name="myArr">
+            <array>
+                <value>EE</value>
+                <value>FF</value>
+            </array>
+        </property>
+        <property name="myMap">
+            <map>
+                <entry key="XX" value="xx"></entry>
+                <entry key="YY" value="yy"></entry>
+            </map>
+        </property>
+    </bean>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

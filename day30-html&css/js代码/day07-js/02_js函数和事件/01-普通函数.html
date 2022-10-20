@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>普通函数</title>
+    <!--定义一个函数实现两个数相加-->
+</head>
+<body>
+
+<script>
+    //NaN: not a number
+
+    //定义函数
+    // function add(a, b) {
+    //     console.log("进入了两参函数");
+    //     return a + b;
+    // }
+    //
+    // function add(a, b, c) {
+    //     console.log("进入了三参函数");
+    //     return a + b + c;
+    // }
+
+    function add(...args) {
+        let sum = 0;
+        for (let arg of args) {
+            sum += arg;
+        }
+        return sum;
+    }
+
+    //调用函数
+    let result = add(5, 7, 9);
+    console.log(result);
+</script>
+
+
+</body>
+</html>

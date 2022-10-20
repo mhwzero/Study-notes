@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+
+</head>
+<body>
+<!--
+1. 创建数组的方式:
+	let arr = [1,2,3];
+    注意:JS数组不区分数据类型,而且其长度可以随意改变,因此JS数组类似于Java中的集合  List<Object>
+
+2. 数组常用方法:
+    合并:concat() 合并数组
+    添加:push() 尾部添加  /  unshift() 头部添加
+    删除:pop() 尾部删除  /  shift() 头部删除
+    转字符串:join(分隔符) 与字符串的split()相反
+-->
+<script>
+    let arr1 = [true, 1, "2"];
+    let arr2 = ["哈哈", new Date()];
+
+    console.log(arr1.concat(arr2));
+
+    arr1.push(3.0);
+    console.log(arr1);
+
+    arr1.pop();
+    console.log(arr1);
+
+    console.log(arr1.join("**"));
+
+
+</script>
+
+</body>
+</html>

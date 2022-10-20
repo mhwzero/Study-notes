@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>字符串</title>
+
+</head>
+<body>
+<!--
+    1. 构造字符串对象:
+        let str1 = "xxx";
+        let str1 = 'xxx';
+
+    2. 字符串常用方法:
+        substring(startIndex,endIndex) 提取字符串中两个指定的索引号之间的字符,截取字符和slice相似
+        split(delimiter) 把字符串分割为子字符串数组
+        toLowerCase()/toUpperCase()  把字符串转换为小/大写
+        trim() 移除字符串首尾空白
+-->
+<script>
+    // ------------ 1. 构造字符串对象可以使用  双引号,单引号
+    let str1 = "Helloeoop";
+    let str2 = '  wor  ld   ';
+
+    // ------------ 2. 字符串常用方法
+    console.log(str1.substring(0, 3));
+    console.log(str1.split("e"));
+    console.log(str1.toUpperCase());
+    console.log(str1.toLowerCase());
+    console.log(str2.trim());
+</script>
+</body>
+</html>

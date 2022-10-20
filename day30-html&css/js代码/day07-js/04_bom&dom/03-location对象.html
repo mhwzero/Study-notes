@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>location对象</title>
+</head>
+<body>
+<!--
+    location地址对象
+        location.reload() 刷新当前页面
+        location.href  获取地址栏中URL
+        location.href = "新地址"  跳转地址
+-->
+<button onclick="refresh()">刷新当前页面</button>
+<br>
+<button onclick="addr()">获取当前浏览器地址</button>
+<br>
+<button onclick="jump()"> 跳转页面(重点)</button>
+<br>
+
+<script>
+    //1. 刷新
+    function refresh() {
+        location.reload();
+    }
+
+    //2. 获取地址栏中URL
+    function addr() {
+        console.log(location.href);
+    }
+
+    //3. 跳转地址
+    function jump() {
+        location.href = "https://www.baidu.com"
+    }
+
+</script>
+</body>
+</html>

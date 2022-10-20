@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>js两个定时器</title>
+</head>
+<body>
+<!--
+JS两个定时器
+    setInterval(做事,间隔多少ms执行): 周期性任务,间隔一定频率重复执行,返回任务标识
+        clearInterval(任务标识)
+    setTimeout(做事,多少ms之后执行):  一次性任务, 在指定的时间后仅仅执行一次,返回任务标识
+        clearTimeout(任务标识)
+-->
+
+<button id="btn1">取消打印时间</button>
+<button id="btn2">取消打印自然数</button>
+
+<script>
+    // 1. 定时5秒之后在控制台打印当前时间
+    let job1= setTimeout(function () {
+        console.log(new Date());
+    }, 5000);
+
+    // 2. 点击按钮取消打印时间
+    document.getElementById("btn1").onclick = function () {
+        clearTimeout(job1);
+    };
+
+
+    // 3. 每隔2秒在控制台打印递增自然数
+    let i = 0;
+    let job2 = setInterval(function () {
+        console.log(i++);
+    }, 2000);
+
+    // 4. 点击按钮取消打印自然数
+    document.getElementById("btn2").onclick = function () {
+        clearInterval(job2);
+    };
+
+
+</script>
+</body>
+</html>

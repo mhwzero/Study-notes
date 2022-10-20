@@ -1,0 +1,120 @@
+/* 页面容器 */
+.container{
+    width: 100%;
+    padding: 0px;
+    margin:0px;
+}
+/* 文字导航栏 */
+.nav{
+    background-color: #ffc900;
+    height: 40px;
+    text-align: center;
+}
+/* 导航栏内容 */
+.nav ul li{
+    display: inline;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 30px;
+}
+/* 注册布局和背景 */
+.content{
+    width: 100%;
+    height: 500px;
+    background: url(../img/register_bg.png) no-repeat center;
+    background-size: 100% 780px;
+    overflow: hidden;
+}
+
+/*注册主体内容*/
+.rg_form{
+    width: 915px;
+    height: 434px;
+    background-color: #fff;
+    margin: 30px auto;
+    border: 8px solid #eeeeee;
+    box-sizing: border-box;
+}
+
+/*注册左div*/
+.rg_form_left{
+    /*border: 1px solid red;*/
+    width: 260px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+/*注册中div*/
+.rg_form_center{
+    /*border: 1px solid red;*/
+    width: 440px;
+    float: left;
+    padding-top: 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+/*注册右div*/
+.rg_form_right{
+    /*border: 1px solid red;*/
+    width: 180px;
+    float: left;
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+/*单元格居上外边距*/
+.rg_form_center table{
+    margin-top: 30px;
+}
+/*左侧单元格*/
+.td_left{
+    width: 55px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/*右侧单元格*/
+.td_right{
+    text-align: left;
+    width: 293px;
+}
+
+/*普通文本框和密码框*/
+input[type="text"],input[type="password"] {
+    width: 180px;
+    height: 20px;
+    line-height: 20px;
+    margin: 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #a6a6a6;
+}
+/*验证码*/
+input[name="smsCode"]{
+    width: 100px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+/*提交按钮*/
+input[type="submit"]{
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ffc900;
+    font-size: 14px;
+    border: #ffc900 solid 1px;
+}
+
+/* 产品服务*/
+.footer{
+    margin-bottom: -5px
+}
+/* 公司版权*/
+.copyright{
+    height: 50px;
+    background-color: #ffc900;
+    text-align: center;
+    line-height: 50px;
+}

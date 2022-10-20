@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 1.描述用户对象（张三丰、男、32岁）
+    let user = {
+        "name": "张三丰",
+        "sex": "男",
+        "age": "32岁"
+    };
+    console.log(user.name + ":" + user.sex + ":" + user.age);
+
+    // 2.描述用户数组（张三丰、张翠山、张无忌）
+    let arr1 = ["张三丰", "张翠山", "张无忌"];
+    for (let user of arr1) {
+        console.log(user);
+    }
+
+    let arr2 = [
+        {"name": "张三丰", "sex": "男", "age": "32岁"},
+        {"name": "张翠山", "sex": "男", "age": "22岁"},
+        {"name": "张无忌", "sex": "男", "age": "2岁"}
+    ];
+
+    for (let user of arr2) {
+        console.log(user.name + ":" + user.sex + ":" + user.age);
+    }
+
+    // 3.描述韦小宝（27岁，老婆、师傅）
+    let xiaobo = {
+        "name": "韦小宝",
+        "age": "27岁",
+        "wife": [
+            {"name": "双儿", "age": 18, "address": "扬州"},
+            {"name": "苏荃", "age": 28, "address": "神龙岛"}
+        ],
+        "teacher": {
+            "name": "独臂神尼", "age": "56"
+        }
+    };
+
+    console.log("name="+xiaobo.name+",age="+xiaobo.age);
+    for (let wife of xiaobo.wife) {
+        console.log("name="+wife.name+",age="+wife.age);
+    }
+    console.log("name="+xiaobo.teacher.name+",age="+xiaobo.teacher.age);
+
+</script>
+</body>
+</html>

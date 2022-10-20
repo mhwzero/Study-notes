@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1eb6f965-c53a-45bb-960f-21b1d32fac40" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day23-枚举和反射/img/image-20210226232931732.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day30-html&amp;css/studay30-HTML&amp;CSS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/Studay31.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006144708007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006145535466.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006145948919.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006150517082.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006150534441.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006151210847.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006152344122.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006153120780.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006161112441.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006162333831.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006162625789.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006163312305.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006163836980.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006163959629.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006164834113.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006165356887.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day32-request&amp;response/img/image-20210922115825103.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day32-request&amp;response/studay32.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20201024004715008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009094056444.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009103955373.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009104014682.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009104746131.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009110648775.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009114612449.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day33-域和jsp/studay33.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day35-vue-login案例/Student35.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day36-分页操作/img/image-20221014145011394.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day36-分页操作/img/image-20221014155938163.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day36-分页操作/student36.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day37-spring工厂(IOC)/img/image-20221017093153252.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day37-spring工厂(IOC)/img/image-20221017155835967.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day37-spring工厂(IOC)/studentday37.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day38-spring中Bean配置和注解/studay38.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day39-注解和AOP/img/image-20200720165241134.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day39-注解和AOP/img/image-20210608151613450.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day39-注解和AOP/img/image-20221019144403515.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day39-注解和AOP/studay39.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day23-枚举和反射/Studay23.md" beforeDir="false" afterPath="$PROJECT_DIR$/day23-枚举和反射/Studay23.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\JavaTool\dev\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../JavaTool/dev/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="D:\JavaTool\dev\apache-maven-3.3.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2GG4vfWZ4YU0GGWIkNiLZXGlxqh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day33-域/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.29558998" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git\day33-域\img" />
+      <recent name="D:\git\day32-request&amp;response\img" />
+      <recent name="D:\git\day36-element&amp;分页\img" />
+      <recent name="D:\git\day39-注解和AOP\img" />
+      <recent name="D:\git\day36-spring工厂\img" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1eb6f965-c53a-45bb-960f-21b1d32fac40" name="Default Changelist" comment="" />
+      <created>1666001818850</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666001818850</updated>
+      <workItem from="1666001820594" duration="6967000" />
+      <workItem from="1666015144267" duration="555000" />
+      <workItem from="1666053643350" duration="24000" />
+      <workItem from="1666097321679" duration="2216000" />
+      <workItem from="1666103314071" duration="1514000" />
+      <workItem from="1666139752643" duration="10000" />
+      <workItem from="1666188046525" duration="4405000" />
+      <workItem from="1666235555951" duration="2814000" />
+      <workItem from="1666239684881" duration="3785000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

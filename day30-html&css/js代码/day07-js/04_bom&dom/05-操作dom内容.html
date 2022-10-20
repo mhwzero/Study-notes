@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>操作dom内容</title>
+    <style>
+        #myDiv{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<div id="myDiv">程序猿最讨厌的四件事：<br>自己写注释、自己写文档…… </div>
+
+<script>
+    // 获取元素的内容: js对象.innerHTML
+    // 修改元素的内容: js对象.innerHTML='xxx'
+
+    let myDiv = document.getElementById('myDiv');
+    //1. 在控制台打印div中的内容
+    console.log(myDiv.innerHTML);
+
+    //2. 在上面div中的内容中添加---> <br>别人不写注释、别人不写文档……
+    //myDiv.innerHTML = myDiv.innerHTML + "<br>别人不写注释、别人不写文档……";
+    myDiv.innerHTML += "<br>别人不写注释、别人不写文档……";
+
+</script>
+</body>
+</html>

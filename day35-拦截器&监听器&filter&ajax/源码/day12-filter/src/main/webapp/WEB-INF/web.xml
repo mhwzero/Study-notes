@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+<!--    &lt;!&ndash;配置过滤器&ndash;&gt;
+    <filter>
+        <filter-name>logFilter</filter-name>
+        <filter-class>com.itheima.filter.LogFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>logFilter</filter-name>
+        &lt;!&ndash;拦截路径&ndash;&gt;
+        <url-pattern>/target.jsp</url-pattern>
+    </filter-mapping>-->
+
+    <!--
+        * 在Filter中的url-pattern支持下面的匹配方式:
+            1. 精确匹配：拦截一个具体的路径                                 /target.jsp
+            2. 路径匹配：拦截指定路径下的所有资源，要求以/开头，以`*`结尾       /*    /a/*
+            3. 后缀匹配：拦截指定后缀的请求，要求以`*.`开头                   *.jsp   *.html
+    -->
+
+<!--
+    <filter>
+        <filter-name>aFilter</filter-name>
+        <filter-class>com.itheima.filter.AFilter</filter-class>
+    </filter>
+    <filter>
+        <filter-name>bFilter</filter-name>
+        <filter-class>com.itheima.filter.BFilter</filter-class>
+    </filter>
+
+
+    &lt;!&ndash;根据filter-mapping的先后顺序来决定过滤器的顺序， 哪个过滤器的filter-mapping在前面先执行哪个&ndash;&gt;
+    <filter-mapping>
+        <filter-name>bFilter</filter-name>
+        <url-pattern>/target.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>aFilter</filter-name>
+        <url-pattern>/target.jsp</url-pattern>
+    </filter-mapping>
+-->
+
+
+</web-app>

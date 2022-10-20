@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML引入JS</title>
+</head>
+<body>
+<!--
+    内部方式 : 直接在HTML页面中使用<script>嵌入js脚本
+    外部方式 : 首先单独定义一个js文件, 再通过script将文件引入到HTML页面中
+        细节1: script这个标签必须是双标签
+        细节2: script这个标签中间是不能再书写js代码,书写了也无用
+-->
+
+<script>
+    alert("我是Js内部方式弹的窗");
+</script>
+
+<script src="../js/my.js"></script>
+
+
+</body>
+</html>

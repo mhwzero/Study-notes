@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS选择器</title>
+
+    <style>
+        /*1. 标签选择器 直接使用标签名*/
+        span{
+            font-size: 20px;
+        }
+        /*2. class选择器 选出的是所有属性中含有class=值的标签     .female => class=female*/
+        .female{
+            color: red;
+        }
+        .hero{
+            font-weight: bold;
+        }
+        /*3. id选择器 选出的是所有的属性中含有id=值的标签  #boss => id = boss*/
+        #boss{
+            font-size: 50px;
+            color: purple;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--
+    需求:
+        1. 让页面上的所有字体变成20px
+        2. 所有女性变红, 所有英雄加粗
+        3. 灭霸变成50px,紫色
+-->
+<span class="female">古力娜扎</span>
+<span class="female">迪丽热巴</span>
+<span class="female hero">黑寡妇</span>
+
+<span class="male hero">钢铁侠</span>
+<span class="male hero">超人</span>
+
+
+<span id="boss" class="male">灭霸</span>
+
+
+</body>
+</html>

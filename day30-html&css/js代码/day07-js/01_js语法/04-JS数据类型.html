@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>JS数据类型</title>
+</head>
+<body>
+
+<!--
+    * string：字符串类型（单引号  双引号）
+    * number：数值类型（整型 浮点型）
+    * boolean：布尔型
+    * undefined：未定义的
+    * object： 对象和null
+
+    typeof(变量)   返回当前变量的类型
+-->
+<script>
+    let str1 = "hello";
+    let str2 = 'hello';
+    console.log(typeof (str1));//string
+    console.log(typeof (str2));//string
+
+    let num1 = 1;
+    let num2 = 1.0;
+    console.log(typeof (num1));//number
+    console.log(typeof (num2));//number
+
+    let b1 = true;
+    let b2 = false;
+    console.log(typeof (b1));//boolean
+    console.log(typeof (b2));//boolean
+
+    let obj1 = null;
+    let obj2 = new Date();
+    console.log(typeof (obj1));//object
+    console.log(typeof (obj2));//object
+
+    let u1;
+    console.log(typeof (u1)); //undefined
+    console.log(typeof (u2)); //undefined
+
+</script>
+
+
+
+
+</body>
+</html>

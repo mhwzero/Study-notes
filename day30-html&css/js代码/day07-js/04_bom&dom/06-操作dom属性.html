@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>操作dom属性</title>
+</head>
+<body>
+<form action="#" method="get">
+    姓名 <input type="text" name="username" id="username" value="德玛西亚"/> <br/>
+</form>
+
+<script>
+    // 获取元素的属性: js对象.属性名
+    // 设置元素的属性: js对象.属性名='xxx'
+    let myInput = document.getElementById("username");
+
+    // 1.获取文本框value属性的值
+    console.log(myInput.value);
+
+    // 2.修改文本框value属性的值
+    myInput.value = "嘻嘻哈哈";
+    myInput.type = "password";
+</script>
+</body>
+</html>

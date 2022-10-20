@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <!--
+        下面这段配置的核心是为TimeServlet类配置一个访问路径
+    -->
+    <servlet>
+        <servlet-name>timeServlet</servlet-name>
+        <servlet-class>com.itheima.servlet.TimeServlet</servlet-class>
+
+        <!--自定义配置信息-->
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>utf-8</param-value>
+        </init-param>
+
+        <!--通过配置此选项将此servlet的创建时间提前到tomcat启动之后-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>timeServlet</servlet-name>
+        <url-pattern>/timeServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

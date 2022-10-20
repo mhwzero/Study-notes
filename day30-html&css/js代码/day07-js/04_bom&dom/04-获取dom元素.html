@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>获取dom元素</title>
+</head>
+<body>
+<form action="#" method="get">
+    姓名 <input type="text" name="username" id="username" value="德玛西亚"/> <br/>
+    性别
+    <input type="radio" name="gender" value="male" class="radio">男&emsp;
+    <input type="radio" name="gender" value="female" class="radio"/>女<br/>
+    爱好
+    <input type="checkbox" name="hobby" value="smoke">抽烟
+    <input type="checkbox" name="hobby" value="drink">喝酒
+    <input type="checkbox" name="hobby" value="perm">烫头<br/>
+    学历
+    <select name="edu">
+        <option value="0">请选择</option>
+        <option value="1">入门</option>
+        <option value="2">精通</option>
+        <option value="3">放弃</option>
+    </select>
+</form>
+
+<script>
+    // document.getElementById(id属性值)
+    // document.getElementsByTagName(标签名)
+    // document.getElementsByClassName(class属性值)
+    // document.getElementsByName(name属性值)
+
+    // 1.获取id="username"的标签对象
+    // let element1 = document.getElementById("username");
+    // console.log(element1);
+    // console.log(element1.value);
+    // console.log(element1.type);
+
+    // 2.获取class="radio"的标签对象数组
+    // let elements2 = document.getElementsByClassName("radio");
+    // console.log(elements2);
+    // for(let element of elements2){
+    //     console.log(element);
+    // }
+
+    // 3.获取所有的option标签对象数组
+    // let elements3 = document.getElementsByTagName("option");
+    // for (let element of elements3){
+    //     console.log(element);
+    // }
+
+    // 4.获取name="hobby"的input标签对象数组
+    let elements4 = document.getElementsByName("hobby");
+    for (let element of elements4){
+        console.log(element);
+    }
+
+
+</script>
+</body>
+</html>

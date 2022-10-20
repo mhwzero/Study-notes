@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+			    http://www.springframework.org/schema/beans/spring-beans.xsd
+			    http://www.springframework.org/schema/context
+			    http://www.springframework.org/schema/context/spring-context.xsd
+			    http://www.springframework.org/schema/tx
+			    http://www.springframework.org/schema/tx/spring-tx.xsd
+                http://www.springframework.org/schema/aop
+                https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--组件扫描-->
+    <context:component-scan base-package="com.itheima"></context:component-scan>
+
+
+    <!--代表这是一段关于aop的配置-->
+    <aop:config>
+
+        <!--
+            切点表达式: 选定切点
+            * 代表的是占位符, 占的是1个或者多个位置
+            .. 代表的是占位符, 占的是0个或者多个位置
+        -->
+        <aop:pointcut id="pt"
+                      expression="execution(* com.itheima.service.impl.*.*(..))"/>
+
+        <!--
+            配置切面: 增强方法 和 切点方法的执行顺序
+            ref + method: 增强方法
+            pointcut-ref: 指向切点表达式
+            before: 执行顺序(增强在切点的什么位置)
+        -->
+        <aop:aspect ref="logger">
+<!--            <aop:after-throwing method="m3" pointcut-ref="pt"/>
+            <aop:after method="m4" pointcut-ref="pt"/>
+            <aop:before method="m1" pointcut-ref="pt"/>
+            <aop:after-returning method="m2" pointcut-ref="pt"/>-->
+            <aop:around method="m5" pointcut-ref="pt"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

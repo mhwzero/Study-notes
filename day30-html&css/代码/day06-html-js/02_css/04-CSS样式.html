@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS样式</title>
+    <style>
+        /*
+        文本属性:设置文本的颜色,行高,缩进,文本的修饰(有无下划线)等
+        字体属性:设置文字的大小,字体,风格(倾斜),是否加粗
+        需求：
+            1.p段落文字绿色
+            2.p段落文字大小20px
+            3.p段落行高40px
+            4.p段落字体加粗
+            5.p段落字体楷体
+			6.p段落字体倾斜
+            7.p段落首行缩进40px
+			8.p段落中的文字水平居中
+			9.a标题背景颜色为粉色
+			10.隐藏a标题部分
+        */
+        p{
+            color: green; /*p段落文字绿色*/
+            font-size: 20px;/*p段落文字大小20px*/
+            line-height: 40px;/*p段落行高40px*/
+            font-weight: bold;/*p段落字体加粗  bold粗  正常normal*/
+            font-family: '楷体';/*p段落字体楷体*/
+            font-style: italic;/*p段落字体倾斜 italic倾斜  正常normal*/
+            text-indent: 40px;/*p段落首行缩进40px*/
+            text-align: center;/*p段落中的文字水平居中*/
+        }
+
+        a{
+            background-color: pink;
+            display: block;/*none 隐藏  block 块  inline 行内*/
+        }
+
+    </style>
+
+</head>
+<body>
+<div>
+
+	<a> 学习的误区：</a><br/>
+    <p>
+        眼睛：看了一遍记住了<br/>
+        耳朵：听了一遍明白了<br/>
+        脑子：想了一遍搞懂了<br/>
+        手：你们会个屁！^_^ <br>
+    </p>
+
+    <div style="display: inline">1</div>
+    <div style="display: inline">2</div>
+</div>
+</body>
+</html>

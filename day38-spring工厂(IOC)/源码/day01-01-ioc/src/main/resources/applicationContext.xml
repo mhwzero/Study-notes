@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--
+        bean: 向Spring声明,使用哪个类创建一个对象放入Spring容器
+            class: 具体的类名
+            id: 对象在容器中的表示
+    -->
+    <bean id="userDao" class="com.itheima.dao.impl.UserDaoImpl"></bean>
+
+
+    <!--直接调用构造函数创建-->
+    <bean id="book" class="com.itheima.domain.Book"></bean>
+
+    <!--
+        调用静态工厂创建
+        Book book1 = BookFactory.getBook1();
+    -->
+    <bean id="book1" class="com.itheima.factory.BookFactory" factory-method="getBook1"></bean>
+
+
+    <!--
+        调用实例化工厂创建
+        BookFactory bookFactory = new BookFactory();
+        Book book2 = bookFactory.getBook2();
+    -->
+    <bean id="bookFactory" class="com.itheima.factory.BookFactory"></bean>
+    <bean id="book2" factory-bean="bookFactory" factory-method="getBook2"></bean>
+
+</beans>

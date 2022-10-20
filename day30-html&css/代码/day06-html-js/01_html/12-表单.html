@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<!--
+    form: 表单标签,千万注意,不要跟from混淆了
+        action: 表单的提交地址, 由于现在我们还没有学习后端服务器技术, 所以临时提交给自己,写法为###
+        method: 请求方式,支持GET(默认) 和 POST
+        		get：请求参数在地址栏拼接，不安全，对参数总长度有限制
+		        post：参数不在地址栏拼接，相对安全，对参数总长度没有限制
+
+    表单项: 分为三大类(文本框  下拉框  文本域)
+        文本框: 使用type区分不同的小类型 <input>
+            1) text: 普通文本框
+                name: 键
+                value: 设置值, 大部分情况下,是需要用户手动填写
+                placeholder: 文本框提示
+            2) password: 密码框 特点是,输入的内容会被显示为.
+            3) date: 日期框
+            4) radio: 单选框 一组单选框name的值必须一致; value值需要提前给定; 可以使用checked设置默认选中
+            5) checkbox: 复选框 一组复选框name的值必须一致; value值需要提前给定; 可以使用checked设置默认选中
+            6) file: 文件框
+            7) submit: 提交按钮 作用是当点击的时候,将当前表单中的所有内容提交出去; value用于声明按钮内容
+            8) reset: 重置按钮 作用就是将表单重置为初始状态
+            9) button: 目前无用,需要跟js中的事件配合
+            10) hidden: 隐藏域, 仅仅不在页面上显示, 会向后台提交
+        下拉框
+            select 下拉框
+                name
+                multiple 多选
+            option
+                value
+                selected  默认值
+        文本域
+            textarea
+        http://localhost:63343/web/day06-html-js/01_html/12-%E8%A1%A8%E5%8D%95.html?username=%E6%9F%AF%E5%8D%97&pwd=123&birthday=2022-09-29&sex=man&hobby=drink&hobby=hot&picture=%E4%B8%8A%E5%8D%88.torrent###
+-->
+<form action="###" method="POST">
+    <input type="hidden" name="key" value="toutoude">
+    用户名: <input type="text" name="username" value="" placeholder="请输入用户名"><br>
+    密码:<input type="password" name="pwd"><br>
+    出生日期: <input type="date" name="birthday"><br>
+    性别: 男 <input type="radio" name="sex" value="man" checked>
+        女 <input type="radio" name="sex" value="women"><br>
+    爱好: 抽烟 <input type="checkbox" name="hobby" value="smoke">
+        喝酒 <input type="checkbox" name="hobby" value="drink" checked>
+        烫头 <input type="checkbox" name="hobby" value="hot" checked><br>
+    头像: <input type="file" name="picture"><br>
+    <input type="submit" value="注册">
+    <input type="reset" value="重新填写">
+    <input type="button" value="普通按钮"><br>
+    学历: <select name="xueli">
+            <option value="0">小学</option>
+            <option value="1">初中</option>
+            <option value="2">高中</option>
+         </select>
+    专业: <select name="zhuanye" multiple>
+            <option value="0" selected>数学</option>
+            <option value="1" selected>计算机</option>
+            <option value="2">自动化</option>
+         </select><br>
+    个人简介: <textarea name="desc" cols="30" rows="10"></textarea>
+
+
+</form>
+
+
+</body>
+</html>
