@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+			    http://www.springframework.org/schema/beans/spring-beans.xsd
+			    http://www.springframework.org/schema/context
+			    http://www.springframework.org/schema/context/spring-context.xsd
+			    http://www.springframework.org/schema/tx
+			    http://www.springframework.org/schema/tx/spring-tx.xsd
+                http://www.springframework.org/schema/aop
+                https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--注解扫描-->
+    <context:component-scan base-package="com.itheima"></context:component-scan>
+
+    <!--数据源-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql:///spring"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </bean>
+
+    <!--jdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+    <!--这两个标签相当于 配置了完整的事务管理器-->
+    <!--事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--
+        name="切点方法的名字"  支持模糊匹配
+            匹配顺序是从上往下,一旦说匹配成功1个,就结束匹配
+        isolation="DEFAULT" 事务隔离级别
+        propagation="REQUIRED"  事务传播行为
+        timeout="-1"  事务超时时间  -1代表永不超时
+        read-only="false"  只读事务
+        rollback-for="异常" 仅仅为哪一种异常回滚,其他异常的都不回滚 TransferEx
+        no-rollback-for="异常" 除了哪种异常之外的异常才回滚  LogEx
+    -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="find*" read-only="true"/>
+            <tx:method name="*"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <!--配置切点-->
+        <aop:pointcut id="pt" expression="execution(* com.itheima.service.impl.*.*(..))"/>
+
+        <!--
+            这是一个特殊的配置切面,仅仅适用于声明式事务的配置
+             advice-ref="增强" pointcut-ref="切点"
+        -->
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pt"/>
+    </aop:config>
+
+</beans>

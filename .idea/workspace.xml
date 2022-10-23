@@ -5,51 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eb6f965-c53a-45bb-960f-21b1d32fac40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day23-枚举和反射/img/image-20210226232931732.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day30-html&amp;css/studay30-HTML&amp;CSS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/Studay31.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006144708007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006145535466.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006145948919.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006150517082.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006150534441.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006151210847.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006152344122.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006153120780.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006161112441.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006162333831.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006162625789.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006163312305.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006163836980.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006163959629.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006164834113.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day31-Servlet/img/image-20221006165356887.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day32-request&amp;response/img/image-20210922115825103.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day32-request&amp;response/studay32.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20201024004715008.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009094056444.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009103955373.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009104014682.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009104746131.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009110648775.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-域和jsp/img/image-20221009114612449.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day33-域和jsp/studay33.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day35-vue-login案例/Student35.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day36-分页操作/img/image-20221014145011394.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day36-分页操作/img/image-20221014155938163.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day36-分页操作/student36.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day37-spring工厂(IOC)/img/image-20221017093153252.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day37-spring工厂(IOC)/img/image-20221017155835967.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day37-spring工厂(IOC)/studentday37.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day38-spring中Bean配置和注解/studay38.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day39-注解和AOP/img/image-20200720165241134.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day39-注解和AOP/img/image-20210608151613450.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day39-注解和AOP/img/image-20221019144403515.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day39-注解和AOP/studay39.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day23-枚举和反射/Studay23.md" beforeDir="false" afterPath="$PROJECT_DIR$/day23-枚举和反射/Studay23.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/img/image-20200710032043437.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/img/image-20200710032117241.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/img/image-20200710032212191.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/img/image-20200710032308167.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/study41.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/img/image-20211101084153359.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/img/image-20211211163829048-1658989438419.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/img/image-20221022144546613.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/study42.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/注解使用大全.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/注解大全.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day40-注解和AOP/studay40.md" beforeDir="false" afterPath="$PROJECT_DIR$/day40-注解和AOP/studay40.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day33-域/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -102,11 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git\day42-SpringMVC&amp;拦截器\img" />
+      <recent name="D:\git\day41-SpringAOP&amp;事务&amp;SpringMVC\img" />
       <recent name="D:\git\day33-域\img" />
       <recent name="D:\git\day32-request&amp;response\img" />
       <recent name="D:\git\day36-element&amp;分页\img" />
-      <recent name="D:\git\day39-注解和AOP\img" />
-      <recent name="D:\git\day36-spring工厂\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -139,6 +107,10 @@
       <workItem from="1666188046525" duration="4405000" />
       <workItem from="1666235555951" duration="2814000" />
       <workItem from="1666239684881" duration="3785000" />
+      <workItem from="1666313041723" duration="17000" />
+      <workItem from="1666361922719" duration="3201000" />
+      <workItem from="1666438220470" duration="4586000" />
+      <workItem from="1666494457213" duration="9665000" />
     </task>
     <servers />
   </component>

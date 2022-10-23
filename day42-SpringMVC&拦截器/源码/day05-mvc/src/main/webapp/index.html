@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/axios-0.18.0.js"></script>
+    <style>
+        button {
+            display: block;
+            line-height: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="saveUser()">保存用户</button>
+<script>
+    function saveUser() {
+        let user = {
+            name: "张三",
+            age: 18
+        };
+        axios.post("/user", user).then(resp => {
+            console.log(resp.data);
+        });
+    }
+</script>
+<br>
+
+
+<button onclick="findAll()">查询所有用户</button>
+<script>
+    function findAll() {
+        axios.get("/user").then(resp => {
+            console.log(resp.data);
+        })
+    }
+</script>
+<br>
+
+<button onclick="findById()">根据id查询</button>
+<script>
+    function findById() {
+        axios.get("/user/1").then(resp => {
+            console.log(resp.data);
+        })
+    }
+</script>
+<br>
+
+<button onclick="findByCondition()">根据条件查询</button>
+<script>
+    function findByCondition() {
+        //axios.get("/user/name/zhangsan/age/18").then(resp => {
+        axios.get("/user/zhangsan/18").then(resp => {
+            console.log(resp.data);
+        })
+    }
+</script>
+<br>
+
+</body>
+</html>

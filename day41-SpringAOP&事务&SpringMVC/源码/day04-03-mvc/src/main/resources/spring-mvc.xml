@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        https://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--注解扫描-->
+    <context:component-scan base-package="com.itheima"/>
+
+    <!--注解驱动-->
+    <mvc:annotation-driven/>
+
+
+    <!--
+        释放资源(html css js 图片  视频)
+            mapping="/index.html"  指定规则
+            location=""  指定资源位置
+        当请求路径满足   mapping指定的规则的时候, 就直接去 location 指定的位置下找资源
+    -->
+    <mvc:resources mapping="/index.html" location="/"></mvc:resources>
+    <mvc:resources mapping="/js/*" location="/js/"></mvc:resources>
+</beans>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/axios-0.18.0.js"></script>
+    <style>
+        a, form, button {
+            display: block;
+            line-height: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<a href="/user/demo1?name=张三&age=18">入门案例</a><br>
+
+<a href="/user/demo2">@RequestMapping--使用path支持多路径/user/demo2</a><br>
+
+<a href="/user/demo3">@RequestMapping--使用path支持多路径/user/demo3</a><br>
+
+<a href="/user/demo4">@RequestMapping--使用method限制请求方式</a><br>
+
+<a href="/user/demo5?name=张三&age=18">接收参数--简单类型</a><br>
+
+
+<a href="/user/demo6?name=张三&age=18">接收参数--对象类型</a><br>
+
+
+<a href="/user/demo7?names=张三&names=李四">接收参数--数组类型</a><br>
+
+
+<a href="/user/demo8?myDate=2019-10-10">接收参数--日期类型(注解)</a><br>
+
+
+<a href="/user/demo9?myDate=2019-10-10">接收参数--日期类型(配置)</a><br>
+
+
+<form action="/user/demo10" method="post" enctype="multipart/form-data">
+    <input type="file" name="picture">
+    <input type="submit" value="文件上传">
+</form>
+<br>
+
+<form action="/user/demo11" method="post">
+    抽烟:<input type="checkbox" name="hobby" value="smoke">
+    喝酒:<input type="checkbox" name="hobby" value="喝酒">
+    烫头:<input type="checkbox" name="hobby" value="烫头">
+    <input type="submit" value="提交爱好列表">
+</form>
+<br>
+
+<a href="/user/demo12?usERName=张三&password=">@RequestParam的其他使用场景</a><br>
+
+<button onclick="submitURL()">ajax请求--获取地址栏中的参数</button>
+<script>
+    function submitURL() {
+        // axios.get("/user/demo13?name=张三&age=18").then(resp => {
+        //     console.log(resp.data);
+        // });
+
+        // axios.get("/user/demo13", {
+        //     params: {
+        //         name: "李四",
+        //         age: 19
+        //     }
+        // }).then(resp => {
+        //     console.log(resp.data);
+        // });
+
+        axios.post("/user/demo13?name=王五&age=20").then(resp => {
+            console.log(resp.data);
+        });
+    }
+</script>
+<br>
+
+
+<button onclick="submitBody()">ajax请求--获取请求体中的参数</button>
+<script>
+    /*注意: 只有post请求有请求体,get请求是没有请求体的*/
+    function submitBody() {
+        axios.post("/user/demo14", {name: "赵六", age: "21"}).then(resp => {
+            console.log(resp.data);
+        })
+    }
+</script>
+<br>
+
+<a href="/user/demo15?type=1">空指针异常模拟</a><br>
+
+<a href="/user/demo15?type=2">数学异常模拟</a><br>
+
+<a href="/user/demo16">拦截器模拟</a><br>
+
+</body>
+</html>

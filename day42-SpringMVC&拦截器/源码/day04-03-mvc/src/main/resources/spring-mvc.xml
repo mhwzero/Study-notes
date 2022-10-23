@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        https://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--注解扫描-->
+    <context:component-scan base-package="com.itheima"/>
+
+    <!--注解驱动-->
+    <mvc:annotation-driven conversion-service="conversionService2"/>
+
+    <!--类型转换器-->
+    <bean id="conversionService2" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="com.itheima.converter.DateConverter"></bean>
+            </set>
+        </property>
+    </bean>
+
+    <!--
+        释放资源(html css js 图片  视频)
+            mapping="/index.html"  指定规则
+            location=""  指定资源位置
+        当请求路径满足   mapping指定的规则的时候, 就直接去 location 指定的位置下找资源
+    -->
+    <mvc:resources mapping="/index.html" location="/"></mvc:resources>
+    <mvc:resources mapping="/js/*" location="/js/"></mvc:resources>
+
+
+    <!--
+        配置文件上传解析器
+        这个id不能乱写
+    -->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--单次上传文件上限  单位是byte 5*1024*1024-->
+        <property name="maxUploadSize" value="5242880"></property>
+    </bean>
+
+
+<!--    &lt;!&ndash;配置拦截器&ndash;&gt;
+    <mvc:interceptors>
+        &lt;!&ndash;1个拦截器&ndash;&gt;
+        <mvc:interceptor>
+            &lt;!&ndash;设置拦截请求路径&ndash;&gt;
+            <mvc:mapping path="/**"/>
+            &lt;!&ndash;设置不拦截路径&ndash;&gt;
+            <mvc:exclude-mapping path="/user/demo16"/>
+            &lt;!&ndash;拦截主的请求交给哪个拦截器处理&ndash;&gt;
+            <bean class="com.itheima.interceptor.MyInterceptor1"></bean>
+        </mvc:interceptor>
+
+
+    </mvc:interceptors>-->
+
+
+
+    <!--配置拦截器:注意这里注册的顺序就代表拦截器执行的顺序-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/user/demo16"/>
+            <bean class="com.itheima.interceptor.MyInterceptor2"></bean>
+        </mvc:interceptor>
+
+        <mvc:interceptor>
+            <mvc:mapping path="/user/demo16"/>
+            <bean class="com.itheima.interceptor.MyInterceptor1"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
