@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eb6f965-c53a-45bb-960f-21b1d32fac40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/img/image-20200710032043437.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/img/image-20200710032117241.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/img/image-20200710032212191.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/img/image-20200710032308167.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day41-SpringAOP&amp;事务&amp;SpringMVC/study41.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/img/image-20211101084153359.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/img/image-20211211163829048-1658989438419.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/img/image-20221022144546613.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/study42.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/注解使用大全.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/注解大全.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day40-注解和AOP/studay40.md" beforeDir="false" afterPath="$PROJECT_DIR$/day40-注解和AOP/studay40.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day42-SpringMVC&amp;拦截器/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaweb/java/spring" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -76,19 +64,6 @@
       <recent name="D:\git\day32-request&amp;response\img" />
       <recent name="D:\git\day36-element&amp;分页\img" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -110,7 +85,9 @@
       <workItem from="1666313041723" duration="17000" />
       <workItem from="1666361922719" duration="3201000" />
       <workItem from="1666438220470" duration="4586000" />
-      <workItem from="1666494457213" duration="9665000" />
+      <workItem from="1666494457213" duration="9901000" />
+      <workItem from="1666572727951" duration="5000" />
+      <workItem from="1666572764703" duration="96000" />
     </task>
     <servers />
   </component>
