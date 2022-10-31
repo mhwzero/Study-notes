@@ -1,0 +1,46 @@
+######################################################################
+# Build Tools
+
+.gradle
+/officialFile.build/
+!gradle/wrapper/gradle-wrapper.jar
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+######################################################################
+# IDE
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+officialFile.build/*
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+######################################################################
+# Others
+*.log
+*.xml.versionsBackup
+
+!*/officialFile.build/*.java
+!*/officialFile.build/*.html
+!*/officialFile.build/*.xml
+/profile/
+*.gz
+.DS_Store

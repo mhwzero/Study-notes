@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb6f965-c53a-45bb-960f-21b1d32fac40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1eb6f965-c53a-45bb-960f-21b1d32fac40" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +44,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javaweb/java/spring" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,15 +53,20 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.29558998" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/day46-springboot/img/img_7.png" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git\day47-MybatisPlus\img" />
+      <recent name="D:\git\day46-springboot\img" />
+      <recent name="D:\git\day45-maven高级\img" />
       <recent name="D:\git\day42-SpringMVC&amp;拦截器\img" />
       <recent name="D:\git\day41-SpringAOP&amp;事务&amp;SpringMVC\img" />
-      <recent name="D:\git\day33-域\img" />
-      <recent name="D:\git\day32-request&amp;response\img" />
-      <recent name="D:\git\day36-element&amp;分页\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git\day46-springboot\img" />
+      <recent name="D:\git\day45-maven高级\img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,6 +92,17 @@
       <workItem from="1666494457213" duration="9901000" />
       <workItem from="1666572727951" duration="5000" />
       <workItem from="1666572764703" duration="96000" />
+      <workItem from="1666696811774" duration="3466000" />
+      <workItem from="1666704125299" duration="2293000" />
+      <workItem from="1666749278832" duration="181000" />
+      <workItem from="1666794791444" duration="8918000" />
+      <workItem from="1666884322009" duration="2728000" />
+      <workItem from="1666961328157" duration="2020000" />
+      <workItem from="1666965805099" duration="4216000" />
+      <workItem from="1666971369240" duration="2535000" />
+      <workItem from="1667005002799" duration="605000" />
+      <workItem from="1667102367352" duration="15846000" />
+      <workItem from="1667220079866" duration="2873000" />
     </task>
     <servers />
   </component>
