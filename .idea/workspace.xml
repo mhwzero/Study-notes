@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1eb6f965-c53a-45bb-960f-21b1d32fac40" name="Default Changelist" comment="" />
+    <list default="true" id="1eb6f965-c53a-45bb-960f-21b1d32fac40" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day47-MybatisPlus/MybatisPlus.md" beforeDir="false" afterPath="$PROJECT_DIR$/day47-MybatisPlus/MybatisPlus.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +56,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.29558998" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/day46-springboot/img/img_7.png" />
   </component>
   <component name="RecentsManager">
@@ -68,6 +71,21 @@
       <recent name="D:\git\day46-springboot\img" />
       <recent name="D:\git\day45-maven高级\img" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,6 +121,8 @@
       <workItem from="1667005002799" duration="605000" />
       <workItem from="1667102367352" duration="15846000" />
       <workItem from="1667220079866" duration="2873000" />
+      <workItem from="1667232504565" duration="262000" />
+      <workItem from="1667233391008" duration="740000" />
     </task>
     <servers />
   </component>
